@@ -24,16 +24,21 @@ make release
 
 ## Cat
 
-Don't let the name fool you, it is _not_ a full reimplementation of the POSIX
+Don't let the name fool you, it is *_not_* a full reimplementation of the POSIX
 _cat_, it just reads the content of a file
 
 ```bash 
-./target/release/cat <file>
+./target/release/cat <file> [--reversed]
 ```
+
 
 ### Usage
 
 ![cat](assets/cat.png)
+
+You can also _reverse_ the cat output by adding a parameter after the `file`
+
+![cat](assets/cat_reversed.png)
 
 ## LS
 
