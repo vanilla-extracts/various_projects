@@ -1,5 +1,1 @@
-.idea
-Cargo.lock
 target
-crates/calc
-crates/tinysh
