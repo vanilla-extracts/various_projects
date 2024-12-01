@@ -6,8 +6,7 @@ TODO List
 
 - [x] cat
 - [x] ls
-- [ ] tinysh
-- [ ] calc
+- [x] calc (done under its own [project](https://github.com/vanilla-extracts/calc))
 
 # Building
 
@@ -17,9 +16,16 @@ To build the projects do
 cargo build --release
 ```
 
+or just 
+
+```bash
+make release
+```
+
 ## Cat
 
-Cat: I hope you know what cat is
+Don't let the name fool you, it is _not_ a full reimplementation of the POSIX
+_cat_, it just reads the content of a file
 
 ```bash 
 ./target/release/cat <file>
@@ -31,11 +37,13 @@ Cat: I hope you know what cat is
 
 ## LS
 
-LS: a minimalist implementation of ls
+LS: a _very_ minimalistic *bare bone* implementation of ls
 
 ```bash 
 ./target/release/ls <dir>
 ```
+
+It _just_ list files in a dir.
 
 ### Usage
 
